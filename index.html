@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>CRUD</title>
+  </head>
+  <body>
+    <main>
+
+      <div class=" submit-data-container">
+        
+      <form method="get"  class="form">
+        <div>
+          <label for="id_user"></label>
+          <input type="number" min="1" id="id_user"  name="id_user" class="form-control" placeholder="id" required/>
+        </div>
+        <div>
+          <label for="nom"></label>
+          <input type="text"  id="nom" name="nom" class="form-control" placeholder="nom" required/>
+        </div>
+        <div>
+          <label for="prenoms"></label>
+          <input type="text" id="prenoms"  name="prenoms" class="form-control" placeholder="prenoms" required/>
+        </div>
+        <div>
+          <label for="profession"></label>
+          <input type="text" id="profession"  name="profession" class="form-control" placeholder="profession" required/>
+        </div>
+   
+        <button type="submit" class="btn btn-primary" id="btnAddOrChange">Soumettre</button>
+      </form>
+  </div>
+  <div class="data-container mt-2">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id_utilisateur</th>
+          <th>Nom</th>
+          <th>Prenoms</th>
+          <th>Profession</th>
+          <th>Modifier</th>
+          <th>Supprimer</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</main>
+  </body>
+  <script src="./models/Utilsateurs.js"></script>
+  <script src="./assets/index.js"></script>
+</html>
