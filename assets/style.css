@@ -12,10 +12,10 @@ body{
 th{
   font-size: 11px;
 }
-th{
-  font-size: 12px;
-}
+  /* th{
+    font-size: 12px;
+  } */
 
 .testStyle{
-  font-size: 10px;
+  font-size: 8px;
 }
