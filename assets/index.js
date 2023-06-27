@@ -53,6 +53,7 @@ function showData() {
     let deleteBtn = document.createElement("button");
     deleteBtn.classList.add("btn");
     deleteBtn.classList.add("btn-danger");
+    deleteBtn.classList.add("testStyle");
     deleteBtn.textContent = "Supprimer";
 
     deleteBtn.addEventListener("click", (e) => {
@@ -66,6 +67,7 @@ function showData() {
     let upadteBtn = document.createElement("button");
     upadteBtn.classList.add("btn");
     upadteBtn.classList.add("btn-primary");
+    upadteBtn.classList.add("testStyle");
     upadteBtn.textContent = "Modifier";
 
     upadteBtn.addEventListener("click", (e) => {

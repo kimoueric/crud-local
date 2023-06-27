@@ -43,9 +43,11 @@ class Utilisateurs {
 
   static allData() {
     let dataTable = [];
-    for (let index = 1; index <= localStorage.length; index++) {
-      dataTable.push(JSON.parse(localStorage.getItem(index)));
+    for (let index = 0; index < localStorage.length; index++) {
+
+      dataTable.push(JSON.parse(localStorage.getItem(localStorage.key(index))));
     }
+    console.log(dataTable);
     return dataTable;
   }
 

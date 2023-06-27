@@ -8,36 +8,43 @@
     <title>CRUD</title>
   </head>
   <body>
-    <main>
+    <div class="container-sm  d-flex justify-content-center flex-column align-items-center  w-auto ">
 
-      <div class=" submit-data-container">
+          
+      <form method="get"  class="form ">
+        <div class="row w-auto ">
+          <div class="col-sm-3  w-100">
+            
+            <div class="d-flex justify-content-center mb-3">
+            
+          <input type="number" min="1" id="id_user"  name="id_user" class="form-control p-2  " placeholder="id" required/>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+       
+          <input type="text"  id="nom" name="nom" class="form-control p-2" placeholder="nom" required/>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
         
-      <form method="get"  class="form">
-        <div>
-          <label for="id_user"></label>
-          <input type="number" min="1" id="id_user"  name="id_user" class="form-control" placeholder="id" required/>
+          <input type="text" id="prenoms"  name="prenoms" class="form-control p-2" placeholder="prenoms" required/>
         </div>
-        <div>
-          <label for="nom"></label>
-          <input type="text"  id="nom" name="nom" class="form-control" placeholder="nom" required/>
+        <div class="d-flex justify-content-center mb-2">
+          
+          <input type="text" id="profession"  name="profession" class="form-control p-2" placeholder="profession" required/>
         </div>
-        <div>
-          <label for="prenoms"></label>
-          <input type="text" id="prenoms"  name="prenoms" class="form-control" placeholder="prenoms" required/>
+        <div class="d-flex justify-content-start mb-3">
+          <button type="submit" class="btn btn-primary  " id="btnAddOrChange">Soumettre</button>
         </div>
-        <div>
-          <label for="profession"></label>
-          <input type="text" id="profession"  name="profession" class="form-control" placeholder="profession" required/>
-        </div>
-   
-        <button type="submit" class="btn btn-primary" id="btnAddOrChange">Soumettre</button>
+      </div>
+      </div>
       </form>
-  </div>
-  <div class="data-container mt-2">
-    <table class="table">
-      <thead>
+      <div class="row w-auto">
+        <div class="col-sm-6 w-100">
+          <div class="table-responsive-sm">
+
+            <table class="table testStyle  table-bordered w-auto ">
+              <thead>
         <tr>
-          <th>Id_utilisateur</th>
+          <th>Id</th>
           <th>Nom</th>
           <th>Prenoms</th>
           <th>Profession</th>
@@ -45,12 +52,17 @@
           <th>Supprimer</th>
         </tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody class=" text-center">
+      </tbody >
     </table>
   </div>
-</main>
-  </body>
-  <script src="./models/Utilsateurs.js"></script>
+
+  </div>
+</div>
+
+</div>
+
+</body>
+<script src="./models/Utilsateurs.js"></script>
   <script src="./assets/index.js"></script>
 </html>
